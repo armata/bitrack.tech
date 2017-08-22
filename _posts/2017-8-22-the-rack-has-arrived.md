@@ -9,4 +9,6 @@ The side rails can be customized depth-wise. However, you have to account for th
 
 Sadly it looks like an APC rackmount UPS won't fit (SUA1500RMI2U) but I'll get a normal one and a shelf.
 
+More info coming soon :3
+
 ![_config.yml]({{ site.baseurl }}/images/rack.jpg)
