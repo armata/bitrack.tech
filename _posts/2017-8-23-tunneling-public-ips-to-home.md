@@ -17,7 +17,11 @@ The VPS I'm using is a 3€/month one from OVH. It can have up to 16 additional 
 
 Of course, you could do this on a dedicated server with a gigabit connection and with more IPs.
 
-**First, you'll need to configure OpenVPN in bridge/tap mode. Here's my server configuration.**
+# VPS/dedicated server configuration
+
+## OpenVPN server config
+
+First, you'll need to configure OpenVPN in bridge/tap mode. Here's my server configuration (server.conf).
 
 ```
 port 1194
@@ -54,11 +58,11 @@ I'm not going to cover the certificate/key creation part but [here's a good tuto
 
 Basically, it's the same as if you were configuring a normal OpenVPN tun server.
 
-**VPS/dedicated server network configuration**
+## Network configuration
 
-We need to bridge the `tap0` and `eth0` (or whatever interface you use to get out to the internet) to `br0`.
+We need to bridge the `tap0` and `eth0` (or whatever interface you use to connect to the internet) to `br0`.
 
-Here's my `/etc/network/interfaces` file:
+Here's my `/etc/network/interfaces` file. Make sure to check the commenents!
 
 ```
 # The loopback network interface
@@ -80,24 +84,13 @@ iface br0 inet static
     pre-up openvpn --mktun --dev tap0
     bridge_ports eth0 tap0
     bridge_fd 3
-
-# NOT NEEDED!
-iface br0 inet6 static
-    address YOUR_VPS_IPV6_ADDRESS
-    netmask 128
-    # again, ovh-specific
-    post-up /sbin/ip -6 route add 2001:41d0:401:3100::1 dev br0
-    post-up /sbin/ip -6 route add default via 2001:41d0:401:3100::1 dev br0
-    pre-down /sbin/ip -6 route del default via 2001:41d0:401:3100::1 dev br0
-    pre-down /sbin/ip -6 route del 2001:41d0:401:3100::1 dev br0
-    # don't bridge anything here -- we only work with ipv4 for now
 ```
 
 After you do all the necessary edits, you should restart your VPS/dedicated server.
 
-**Configuring pfSense**
+# Configuring pfSense
 
-**OpenVPN client configuration**
+## OpenVPN client configuration
 
 After you've added all the necessary CAs/certs/keys to pfSense, we'll have to configure the OpenVPN client.
 
@@ -105,7 +98,7 @@ Again, this part will not be covered -- just make sure the settings are the same
 
 Obviously, you'll have to set device mode to tap here.
 
-**Interface configuration**
+## Interface configuration
 
 Go to `Interface Assignments` and create an interface with `ovpnc1` as your network port.
 
