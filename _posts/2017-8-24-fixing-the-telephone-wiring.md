@@ -13,10 +13,10 @@ I bought 10 meters of German-made 2 pair telephone cable in Bauhaus. Here's a pi
 
 As you can see, I've properly grounded the wire and connected the second telephone line too.
 
-The result is a great success -- the attainable rate has changed from ~9000/30000 to ~1000/42000:
+The result is a great success -- the attainable rate has changed from ~9000/38000 to ~10000/42000:
 
 ![_config.yml]({{ site.baseurl }}/images/vdsl2_info.png)
 
-Currently this doesn't mean anything to me as I have a 20 down, 2 up package but it will be of great importance in the future when I configure MLPPP.
+Currently this doesn't mean anything to me as I have a 20 down, 2 up package but it will be of great importance in the future when I get a business account and configure MLPPP.
 
 ![_config.yml]({{ site.baseurl }}/images/speedtest_result.png)
