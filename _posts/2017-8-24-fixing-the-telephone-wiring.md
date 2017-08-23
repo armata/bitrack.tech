@@ -3,11 +3,11 @@ layout: post
 title: Fixing the telephone wiring
 ---
 
-Today I took up the task of replacing the old telephone wires (a power cable, in fact).
+Today I took up the task of replacing the old telephone wires.
 
 There were 2 problems with the old wiring:
 
-* the wire used was a 2 core power cable
+* the wire was a 2 core power cable
 * the second telephone line wasn't connected
 
 I bought 10 meters of German-made 2 pair telephone cable in Bauhaus and made some improvements. Here's a picture of the fixed wiring:
