@@ -9,7 +9,9 @@ I bought 10 meters of German-made 2 pair telephone cable in Bauhaus. Here's a pi
 
 ![_config.yml]({{ site.baseurl }}/images/tel_wiring.jpg)
 
-As you can see on the picture, I've properly grounded the wire and connected the second telephone line too.
+(sorry for the rotated picture)
+
+As you can see, I've properly grounded the wire and connected the second telephone line too.
 
 The result is a great success -- the attainable rate has changed from ~9000/30000 to ~1000/42000:
 
