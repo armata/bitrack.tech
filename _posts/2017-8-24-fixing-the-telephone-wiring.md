@@ -1,0 +1,20 @@
+---
+layout: post
+title: Fixing the telephone wiring
+---
+
+Today I took up the task of replacing the old telephone wires (a power cable, in fact).
+
+I bought 10 meters of German-made 2 pair telephone cable in Bauhaus. Here's a picture of the fixed wiring:
+
+![_config.yml]({{ site.baseurl }}/images/tel_wiring.jpg)
+
+As you can see on the picture, I've properly grounded the wire and connected the second telephone line too.
+
+The result is a great success -- the attainable rate has changed from ~9000/30000 to ~1000/42000:
+
+![_config.yml]({{ site.baseurl }}/images/vdsl2_info.png)
+
+Currently this doesn't mean anything to me as I have a 20 down, 2 up package but it will be of great importance in the future when I configure MLPPP.
+
+![_config.yml]({{ site.baseurl }}/images/speedtest_result.png)
