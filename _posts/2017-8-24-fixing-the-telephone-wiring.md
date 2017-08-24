@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Fixing the telephone wiring
+excerpt_separator: <!--more-->
 ---
 
 Today I took up the task of replacing the old telephone wires.
@@ -9,6 +10,8 @@ There were 2 problems with the old wiring:
 
 * the wire was a 2 core power cable
 * the second telephone line wasn't connected
+
+<!--more-->
 
 I bought 10 meters of German-made 2 pair telephone cable in Bauhaus and made some improvements. Here's a picture of the fixed wiring:
 
