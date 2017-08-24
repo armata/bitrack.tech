@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tunneling public IPs from data center to home with pfSense and OpenVPN
+excerpt_separator: <!--more-->
 ---
 
 So you'd like to host servers at home and you have a dynamic IP.
@@ -10,7 +11,7 @@ No problem, right? Just fire up the trusty Dynamic DNS and you should be good to
 You could also use a Nginx reverse proxy on your VPS and OpenVPN in routing/tun mode. But what if you want to retain the original source IP of your traffic? Or what if you need a static IP and not a domain?
 
 Thankfully, there's a far better solution. You could create a L2 bridge between your VPS/dedicated server network and your pfSense box.
-
+<!--more-->
 Not only your IP will never change, you'll be able to have multiple of them and all data will be encrypted.
 
 The VPS I'm using is the 3€/month one from OVH. It can have up to 16 additional IPs.
