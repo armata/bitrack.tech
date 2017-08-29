@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moving to VyOS: Part 1: PPPoE MTU issues
+title: Moving to VyOS (Part 1) - PPPoE MTU issues
 excerpt_separator: <!--more-->
 ---
 
