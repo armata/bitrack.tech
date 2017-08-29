@@ -24,7 +24,7 @@ Therefore, PPPoE's MTU is 1492. Now this means you have to 'modify' the TCP pack
 
 On VyOS this can be fixed with a routing policy. It needs to be applied on the WAN and LAN interface(s).
 
-*On EdgeOS this can be set globally.**
+**On EdgeOS this can be set globally.**
 
 Here are the commands I've used to fix this. Of course, adapt them to match your setup.
 
