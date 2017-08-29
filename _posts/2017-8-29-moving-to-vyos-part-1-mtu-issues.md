@@ -20,7 +20,7 @@ The issue was that I couldn't access some websites, such as Wikipedia or Speedte
 
 Since I have a PPPoE connection, MTU was the culprit. Ethernet interfaces have a MTU of 1500 which doesn't apply to PPPoE interfaces because the PPPoE header takes 8 bytes of space.
 
-Therefore, PPPoE's MTU is 1492. Now this means you have to 'modify' the TCP packets going through your router to have a MTU of **1452** (1492 - 40).
+Therefore, PPPoE's MTU is 1492. Now this means you have to 'modify' the TCP packets going through your router to have a MSS of **1452** (1492 - 40).
 
 On VyOS this can be fixed with a routing policy. It needs to be applied on the WAN and LAN interface(s).
 
