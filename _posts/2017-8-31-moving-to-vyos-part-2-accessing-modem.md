@@ -43,7 +43,7 @@ set nat source rule 100 translation address masquerade
 
 Since I use a zone-based firewall, I created a special zone called `MODEM`.
 
-[I highly suggest moving to a zone-based firewall; it's much easier to work with]
+(I highly suggest moving to a zone-based firewall; it's much easier to work with)
 
 ```
 # traffic from LAN to MODEM
@@ -70,4 +70,4 @@ Of course, don't foget to `commit` and `save`.
 
 ## Conclusion
 
-That should be it! You should now be able to access `192.168.1.0/24` (MODEM) from `192.168.10.0/24` (LAN).
+That should be it! You should now be able to access `192.168.1.1` (the modem) from `192.168.10.0/24` (the LAN network).
