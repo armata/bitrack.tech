@@ -24,6 +24,8 @@ My modem network is `192.168.1.0/24` and the modem is on `192.168.1.1`. I'll giv
 set interfaces ethernet eth1 address '192.168.1.2/24'
 ```
 
+(the /24 here is to create a static route)
+
 ## Create the source NAT rule
 
 We also need NAT so it looks like all the traffic comes out of `192.168.1.2` and not your private network ranges behind VyOS.
