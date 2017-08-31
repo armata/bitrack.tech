@@ -39,7 +39,7 @@ set nat source rule 100 source address '192.168.10.0/24' # my LAN network
 set nat source rule 100 translation address masquerade
 ```
 
-## Firewall setup
+## Configure the firewall
 
 Since I use a zone-based firewall, I created a special zone called `MODEM`.
 
