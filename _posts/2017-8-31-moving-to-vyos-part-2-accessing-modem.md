@@ -10,11 +10,13 @@ You might be wondering: how do I access my modem if I'm behind my VyOS router/fi
 
 The configuration is actually pretty simple -- here's how I did it.
 
-<!--more-->
+
 
 Assuming you have a PPPoE connection, it'll be on a virtual interface, leaving the actual interface (ethX) *unused*.
 
 That means you can set a static IP (don't use DHCP here!), add a bit of source NAT, some firewall rules and you should be good to go.
+
+<!--more-->
 
 ## Set the IP on the interface
 
