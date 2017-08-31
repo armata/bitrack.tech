@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moving to VyOS (Part 1) - Accessing modem from inside firewall
+title: Moving to VyOS (Part 2) - Accessing modem from inside firewall
 excerpt_separator: <!--more-->
 ---
 
