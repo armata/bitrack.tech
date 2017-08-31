@@ -14,7 +14,7 @@ The configuration is actually pretty simple -- here's how I did it.
 
 Assuming you have a PPPoE connection, it'll be on a virtual interface, leaving the actual interface (ethX) *unused*.
 
-That means you can set a static IP (don't use DHCP here!), add some source NAT and some firewall rules and you should be good to go.
+That means you can set a static IP (don't use DHCP here!), add a bit of source NAT, some firewall rules and you should be good to go.
 
 1) Set the IP on the interface
 
