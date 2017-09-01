@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi there :)
 
-### More Information
+I'm glad that you enjoy reading my blog. If there's anything to fix or if you have any questions, send me an email.
 
-A place to include any other types of information that you'd like to include about yourself.
+### Patreon
+
+If I helped you and you want to be a Patron, consider checking out [my profile](https://patreon.com/bitrack).
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[malek@linux.com](mailto:malek@linux.com)
